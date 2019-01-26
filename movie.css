@@ -1,0 +1,84 @@
+html, body {
+	background-image: url("moviebg.png");'
+	resize:both;
+	margin:0px;
+	padding:0px;
+	font-family: "Verdana";
+	font-size: 8px;
+	
+	
+}
+p {
+
+	margin-left:1em;
+}
+
+
+#bannerBG{
+	width:100%;
+	height: 50px;
+	background:url("rancidbannerbg.png") center top repeat-x ;	
+	
+}
+.centerImage{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+h1.a {
+	text-align: center;
+	font-family: "Tahoma";
+	font-size:24;
+	text-shadow: 3px 3px #999999;	
+}
+
+
+.wrapper  {
+	width:800px;
+	position:relative;
+	height:100%;
+	margin:0 auto;
+	
+	/*Not working.  Need it not to collapse left/right side on resize; */
+	border: 3px solid gray;
+	
+	
+}
+
+.rightSideBar {
+	display:block;
+	background-color:#A2B964;
+	width:250px;
+	float:right;
+	margin:inherit;
+	
+	
+}
+.rightSideBar dl {
+	padding-left:1em;
+
+}
+
+#footer {
+	text-align:center;
+	clear: both;
+	padding: 5px;
+	margin:inherit;
+	background-color: #A2B964;
+	
+}
+
+.topTitle {
+	height:83px;
+	background:url("rottenlargebg.png") center top repeat-x;
+	font-size:48px;
+	color:red;
+
+}
+.topTitle img {
+	height:inherit;
+	vertical-align:bottom;
+}
+
