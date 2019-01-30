@@ -1,3 +1,4 @@
+/*test*/
 html, body {
 	background-image: url("moviebg.png");'
 	resize:both;
@@ -6,7 +7,7 @@ html, body {
 
 	padding:0px;
 	font-family: "Verdana";
-	font-size: 8px;
+	font-size: 8pt;
 }
 
 p {
@@ -28,7 +29,7 @@ p {
 h1.a {
 	text-align: center;
 	font-family: "Tahoma";
-	font-size:24;
+	font-size:24pt;
 	text-shadow: 3px 3px #999999;	
 }
 
@@ -50,6 +51,7 @@ h1.a {
 	width:250px;
 	float:right;
 	margin:inherit;	
+	font-family:"Arial"
 }
 
 .rightSideBar dt:first-child {
@@ -78,11 +80,53 @@ h1.a {
 .topTitle {
 	height:83px;
 	background:url("rottenlargebg.png") center top repeat-x;
-	font-size:48px;
+	font-size:48pt;
 	color:red;
 }
 .topTitle img {
 	height:inherit;
 	vertical-align:bottom;
 }
+/*grid and columns of left side */
+.clearfix{
+	overflow: auto;
+}
+.leftSideOverall{
+	display: block;
+	width: 550px;
+	float: left;
+	margin:inherit;	
+}
+
+.criticBox{
+	border: 2px grey;
+	border-style: solid;
+	border-spacing: 8px; 
+	padding: 8px;
+	background-color: #E8DC9B;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+.leftBox{
+	display:inline;
+	width:47%;
+	float:left;
+	padding: 8px;
+}
+.rightBox{
+	display:inline;
+	width: 47%;
+	float: right;
+	padding: 8px;
+}
+.leftBox img{
+	float: left;
+	padding-right: 5px;
+}
+.rightBox img{
+	float: left;
+	padding-right: 5px;
+}
+
 
