@@ -17,20 +17,24 @@ p {
 #bannerBG{
 	width:100%;
 	height: 50px;
-	background:url("rancidbannerbg.png") center top repeat-x ;	
+	background:url("rancidbannerbg.png") center top repeat-x ;
+	position:sticky;
+	top:0;
+	z-index:1;
 }
 
 .centerBanner{
 	display:block;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;	
 }
 
 h1.a {
 	text-align: center;
 	font-family: "Tahoma";
 	font-size:24pt;
-	text-shadow: 3px 3px #999999;	
+	text-shadow: 3px 3px #999999;
+	margin-top:72px;
 }
 
 .wrapper  {
@@ -41,6 +45,8 @@ h1.a {
 	
 	/*Not working.  Need it not to collapse left/right side on resize; */
 	border: 3px solid gray;
+	border-radius:20px;
+	
 	
 	
 }
@@ -50,8 +56,13 @@ h1.a {
 	background-color:#A2B964;
 	width:250px;
 	float:right;
-	margin:inherit;	
-	font-family:"Arial"
+	margin:0px;	
+	font-family:"Arial";
+	border-top-right-radius:20px;
+}
+
+.rightSideBar img{
+	border-top-right-radius:20px;
 }
 
 .rightSideBar dt:first-child {
@@ -69,12 +80,18 @@ h1.a {
 	padding:inherit;
 }
 
+.rightSideBar dl {
+	height:535px;
+}
+
 #footer {
 	text-align:center;
 	clear: both;
 	padding: 5px;
 	margin:inherit;
 	background-color: #A2B964;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
 }
 
 .topTitle {
@@ -82,10 +99,19 @@ h1.a {
 	background:url("rottenlargebg.png") center top repeat-x;
 	font-size:48pt;
 	color:red;
+	border-top-right-radius:20px;
+	border-top-left-radius:20px;
 }
 .topTitle img {
 	height:inherit;
 	vertical-align:bottom;
+	border-top-left-radius:20px;
+}
+
+.topTitle p{
+	font-size:8pt;
+	color:white;
+	display:inline;
 }
 /*grid and columns of left side */
 .clearfix{
@@ -106,6 +132,7 @@ h1.a {
 	background-color: #E8DC9B;
 	font-size: 8pt;
 	font-weight: bold;
+	border-radius:10px;
 }
 
 .leftBox{
